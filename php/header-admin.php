@@ -7,6 +7,6 @@
         <title>admin</title>    
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-		 <link rel="stylesheet" href="css/style_admin.css">	
+		 <link rel="stylesheet" href="css/admin.css">	
        
     </head>

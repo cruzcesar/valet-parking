@@ -1,0 +1,12 @@
+.imagen_inicio{
+
+
+    background: url(../img/fondo1.png)top right no-repeat;
+    width: 100%;
+    height: 968px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    background-position: 30% 30%;
+}

@@ -8,5 +8,5 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	 <link rel="stylesheet" href="css/style-interiores.css">
-    <title>Registro de Usuario</title>
+    <title>Menu de Restaurante</title>
 </head>

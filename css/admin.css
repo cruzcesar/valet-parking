@@ -1,0 +1,93 @@
+.email-stylos {
+	text-align: right;
+	margin-top: 30px;
+	
+}
+
+.email-stylos a {
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	font-weight:600;
+	
+}
+
+.email-stylos i {
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+}
+
+.cerrar_login {
+	display: none;
+	background: #2e353d;
+	width: 70%;
+	height: 220px;
+	position: absolute;
+	right: 0;
+	left: auto;
+	left: auto;
+	top: 78px;
+	z-index: 100;
+}
+
+.cerrar_login p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.img-perfil {
+	z-index: 5;
+	height: 90px;
+	width: 90px;
+	border: 3px solid;
+	border-color: transparent;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+}
+
+.parrofo_peril {
+	color: #fff;
+	text-align: center;
+}
+
+.parrafo-sucursal {
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+}
+
+.contener-perfil {
+	background: #eee;
+	width: 100%;
+	height: 70px;
+}
+
+.btn-light {
+	background: #fff;
+	margin-left: 20px;
+	margin-top: 18px;
+	border-color: #ccc;
+	color:#ccc;
+	
+}
+
+#cerrar {
+	background: #fff;
+	float: right;
+	margin-top: 18px;
+	border-color: #ccc;
+}
+
+
+.imagen_inicio {
+    background: url(../img/fondo8.png)top right no-repeat;
+    width: 100%;
+    height: 968px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    background-position: 30% 30%;
+}

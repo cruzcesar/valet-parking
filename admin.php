@@ -27,7 +27,7 @@
                       </style>
                    <?php include 'php/header-admin.php';?>
                    <body class="do-nicescrol">
-                      <div style="background:#6d7fcc; width:100%; height:auto;">
+                      <div style="background:#6d4c41; width:100%; height:auto;">
                          <div class="container-fluid">
                             <div class="row">
                                <div class="col-md-6">
@@ -73,7 +73,7 @@
                            <div class="row">
                               <div class="col-md-12" style="margin-top:150px;">
                               <div class="col-md-3">
-                              <div style="background:#6d7fcc;width:100%;height:140px;">
+                              <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=empleados" > <i class="fa fa-users" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Empleados</p>
@@ -82,7 +82,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                              <div style="background:#6d7fcc;width:100%;height:140px;">
+                              <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=tareas" > <i class="far fa-id-card" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Roles / Tareas</p>
@@ -92,7 +92,7 @@
                               </div>
 
                               <div class="col-md-3">
-                              <div style="background:#6d7fcc;width:100%;height:140px;">
+                              <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=turno" > <i class="glyphicon glyphicon-time" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Turnos</p>
@@ -101,7 +101,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                              <div style="background:#6d7fcc;width:100%;height:140px;">
+                              <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=capacitacion" > <i class="fas fa-chalkboard-teacher" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Capacitacion</p>
@@ -112,7 +112,7 @@
                               </div>
                             
                                  <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#6d4c41;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=orden" > <i class="fas fa-utensils" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Orden de Mesa</p>
@@ -121,7 +121,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#6d4c41;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=cuenta" > <i class="fas fa-money-check-alt" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;"> Cuenta por mesa</p>
@@ -130,7 +130,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#6d4c41;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=pedido" > <i class="fas fa-motorcycle" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Pedido a Domicilio</p>
@@ -139,7 +139,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#6d4c41;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=proveedor" > <i class="fas fa-truck" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     
@@ -151,7 +151,7 @@
                               </div>
                             
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=inventario" > <i class="glyphicon glyphicon-list-alt" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Inventarios</p>
@@ -160,7 +160,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=estadisticas" > <i class="fas fa-chart-line" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Estadisticas</p>
@@ -169,7 +169,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=fechas" > <i class="glyphicon glyphicon-calendar" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Fechas Importantes</p>
@@ -178,7 +178,7 @@
                                  <p style="margin-top:30px;"></p>
                               </div>
                               <div class="col-md-3">
-                                 <div style="background:#6d7fcc;width:100%;height:140px;">
+                                 <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="menu.php?opcion=ayuda" > <i class="fa fa-info-circle" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Ayuda</p>

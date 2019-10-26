@@ -108,7 +108,7 @@
                <li style="display:inline-block; margin-left:50px;">
               
                <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="menu.php?opcion=turno" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
+               <span ><a href="empleados.php?operaciones=editar_empleado" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
                   <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
                   <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
                   <?php echo $turnos; ?>
@@ -159,7 +159,7 @@
        <div class="row">
        <div class="col-md-12" style="margin-top:150px;">
        <table class="table">
-  <thead class="" style="background:#6d7fcc;">
+  <thead class="" style="background:#8049da;">
     <tr>
       <th scope="col" style="color:#fff;">N° Empleado</th>
       <th scope="col" style="color:#fff;">Nombre</th>
@@ -191,7 +191,7 @@
       <td><?php echo $row['roles'] ?></td>
       <td><?php echo $row['turno'] ?></td>
       <td><?php echo $row['area'] ?></td>
-      <td><a href="turno.php?turnos=<?php echo $turno_uno_edit; ?>"> <i class="fas fa-user-minus" style="font-size:25px;color:#6d7fcc;"></i> </a></td>
+      <td><a href="editar_emples.php?turnos=<?php echo $turno_uno_edit; ?>"> <i class="fas fa-user-minus" style="font-size:25px;color:#8049da;"></i> </a></td>
     </tr>
   
    
@@ -231,7 +231,7 @@
                <li style="display:inline-block; margin-left:50px;">
               
                <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="menu.php?opcion=turno" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
+               <span ><a href="empleados.php?operaciones=editar_empleado" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
                   <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
                   <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
                   <?php echo $turnos; ?>
@@ -314,7 +314,7 @@
       <td><?php echo $row['roles'] ?></td>
       <td><?php echo $row['turno'] ?></td>
       <td><?php echo $row['area'] ?></td>
-      <td><a href="turno.php?turnos=<?php echo $turno_dos_edit ?>"> <i class="fas fa-user-minus" style="font-size:25px;color:#6d7fcc;"></i> </a></td>
+      <td><a href="editar_emples.php?turnos=<?php echo $turno_dos_edit ?>"> <i class="fas fa-user-minus" style="font-size:25px;color:#6d7fcc;"></i> </a></td>
     </tr>
   
     
@@ -358,7 +358,7 @@
                <li style="display:inline-block; margin-left:50px;">
               
                <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="menu.php?opcion=turno" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
+               <span ><a href="empleados.php?operaciones=editar_empleado" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
                   <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
                   <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
                   <?php echo $turnos; ?>
@@ -442,7 +442,7 @@
       <td><?php echo $row['roles'] ?></td>
       <td><?php echo $row['turno'] ?></td>
       <td><?php echo $row['area'] ?></td>
-      <td><a href="turno.php?turnos=<?php echo $tercer_turno_edit ?>"> <i class="fas fa-user-minus" style="font-size:25px;color:#6d7fcc;"></i> </a></td>
+      <td><a href="editar_emples.php?turnos=<?php echo $tercer_turno_edit ?>"> <i class="fas fa-user-minus" style="font-size:25px;color:#6d7fcc;"></i> </a></td>
     </tr>
   
     
@@ -490,7 +490,7 @@
                <li style="display:inline-block; margin-left:50px;">
               
                <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="menu.php?opcion=turno" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
+               <span ><a href="empleados.php?operaciones=editar_empleado" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
                   <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
                   <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
                   <?php echo $turnos; ?>
@@ -546,310 +546,7 @@
        </div>
     </div>
 </div>
-  <?php } 
-   require 'php/config.php';
-                     
-   $sql = "SELECT id,numeroempleado,nombre,roles,area,turno  FROM empleados where turno='1'";
-   $result = $con->query($sql);
-
-
-        if ($result->num_rows > 0) {
-
-          while($row = $result->fetch_assoc()) {
-             
-             $turno_uno_edit= $row['numeroempleado']; 
-  if($turnos==$turno_uno_edit){ 
-     ?>
-
-<div style="background:#6d7fcc; width:100%; height:auto;">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-5">
-               <p style="margin-top:28px;">
-               <ul>
-               <li style="display:inline-block;">
-                  <a href="admin.php" style="color:#fff; text-decoration: none;"> <i class="fa fa-home" style="font-size:25px; color:#fff;"></i>
-                  <span style="font-size: 17px; font-weight:800; position:relative;left:15px;">
-                  Ir al Panel
-                  </span>    
-                  </a>
-               </li>
-               <li style="display:inline-block; margin-left:50px;">
-              
-               <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="turno.php?turnos=primero" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
-                  <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
-                  <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
-                  Turno : <?php echo $row['turno']; ?>
-                  </span>    
-                  </a>
-               </li>
-               </ul>
-               
-               
-               </p>
-             
-            </div>
-            
-            <div class="col-md-3"></div>
-                               <div class="col-md-3" style="">
-                               <div>
-               <p class="email-stylos">
-                  <a href="javascript:MyFunction();" id="abrir" style="position:relative; top:8px;">
-                  <?php echo $sesion->get("email"); ?>
-                  </a>
-                  <i class="fa fa-caret-down" aria-hidden="true" style="position:relative; top:8px;"></i>
-               </p>
-               <div class="cerrar_login" id="perfil" style="margin-top:10px;">
-                  <p>
-                     <img src="<?php echo $foto; ?>" class="img-perfil" alt="User Image">
-                  </p>
-                  <p class="parrofo_peril">
-                     <?php echo $roles; ?>
-                  </p>
-                  <p class="parrafo-sucursal"> Sucursal
-                     <?php echo $sucursal; ?>
-                  </p>
-                  <div class="contener-perfil">
-                     <a href="php/cerrarsesion.php" class="btn btn-light" style=""> Salir</a>
-                     <p id="cerrar" class="btn btn-light"> 
-                        <a href="" style="text-decoration:none; color:#2e2e2e;">Cerrar</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   </div>
-   <div class="imagen_inicio">
-    <div class="container">
-       <div class="row">
-       <div class="col-md-12">
-     <p style="margin-top:180px;"> </p>
-  </div>
- <p><?php echo $row['nombre']; ?></p>
-       </div>
-    </div>
-</div>
-
-  <?php }}}?>
-
-
-
-<?php 
-  require 'php/config.php';
-                     
-  $sql = "SELECT id,numeroempleado,nombre,roles,area,turno  FROM empleados where turno='2'";
-  $result = $con->query($sql);
-
-
-       if ($result->num_rows > 0) {
-
-         while($row = $result->fetch_assoc()) {
-            
-            $turno_dos_edit= $row['numeroempleado']; 
- if($turnos==$turno_dos_edit){ 
-   
-
-
-?>
-<div style="background:#6d7fcc; width:100%; height:auto;">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-5">
-               <p style="margin-top:28px;">
-               <ul>
-               <li style="display:inline-block;">
-                  <a href="admin.php" style="color:#fff; text-decoration: none;"> <i class="fa fa-home" style="font-size:25px; color:#fff;"></i>
-                  <span style="font-size: 17px; font-weight:800; position:relative;left:15px;">
-                  Ir al Panel
-                  </span>    
-                  </a>
-               </li>
-               <li style="display:inline-block; margin-left:50px;">
-              
-               <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="turno.php?turnos=segundo" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
-                  <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
-                  <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
-                  Turno : <?php echo $row['turno']; ?>
-                  </span>    
-                  </a>
-               </li>
-               </ul>
-               
-               
-               </p>
-             
-            </div>
-            
-            <div class="col-md-3"></div>
-                               <div class="col-md-3" style="">
-                               <div>
-               <p class="email-stylos">
-                  <a href="javascript:MyFunction();" id="abrir" style="position:relative; top:8px;">
-                  <?php echo $sesion->get("email"); ?>
-                  </a>
-                  <i class="fa fa-caret-down" aria-hidden="true" style="position:relative; top:8px;"></i>
-               </p>
-               <div class="cerrar_login" id="perfil" style="margin-top:10px;">
-                  <p>
-                     <img src="<?php echo $foto; ?>" class="img-perfil" alt="User Image">
-                  </p>
-                  <p class="parrofo_peril">
-                     <?php echo $roles; ?>
-                  </p>
-                  <p class="parrafo-sucursal"> Sucursal
-                     <?php echo $sucursal; ?>
-                  </p>
-                  <div class="contener-perfil">
-                     <a href="php/cerrarsesion.php" class="btn btn-light" style=""> Salir</a>
-                     <p id="cerrar" class="btn btn-light"> 
-                        <a href="" style="text-decoration:none; color:#2e2e2e;">Cerrar</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   </div>
-
-   <div>
-   <div class="container">
-   <div class="row">
-   <div class="col-md-12">
-   <p><?php echo $row['nombre']; ?></p>
-   
-   </div>
-   </div>
-   </div>
-   </div>
- <?php }}} ?>
-
-
-<?php
- require 'php/config.php';
-                     
- $sql = "SELECT id,numeroempleado,nombre,roles,area,turno  FROM empleados where turno='3'";
- $result = $con->query($sql);
-
-
-      if ($result->num_rows > 0) {
-
-        while($row = $result->fetch_assoc()) {
-           
-           $tercer_turno_edit= $row['numeroempleado']; 
-if($turnos==$tercer_turno_edit){ 
-  
-
-
-
-
-?>
-
-<div style="background:#6d7fcc; width:100%; height:auto;">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-5">
-               <p style="margin-top:28px;">
-               <ul>
-               <li style="display:inline-block;">
-                  <a href="admin.php" style="color:#fff; text-decoration: none;"> <i class="fa fa-home" style="font-size:25px; color:#fff;"></i>
-                  <span style="font-size: 17px; font-weight:800; position:relative;left:15px;">
-                  Ir al Panel
-                  </span>    
-                  </a>
-               </li>
-               <li style="display:inline-block; margin-left:50px;">
-              
-               <i class="fas fa-undo-alt" style="font-size:22px; position:relative;top:1px;left:2px;color:#fff;"></i>
-               <span ><a href="turno.php?turnos=tercero" style="font-weight:800;font-size:18px; color:#fff;margin-left:10px; text-decoration:none;"> Seccion anterior  </a></span>
-                  <a href="" style="color:#fff; text-decoration: none;"> <i class="fa fa-users" style="font-size:20px; color:#fff;margin-left:25px;"></i>
-                  <span style="font-size: 17px; position:relative;left:5px;top:-1px;font-weight:800;">
-                  Turno : <?php echo $row['turno']; ?>
-                  </span>    
-                  </a>
-               </li>
-               </ul>
-               
-               
-               </p>
-             
-            </div>
-            
-            <div class="col-md-3"></div>
-                               <div class="col-md-3" style="">
-                               <div>
-               <p class="email-stylos">
-                  <a href="javascript:MyFunction();" id="abrir" style="position:relative; top:8px;">
-                  <?php echo $sesion->get("email"); ?>
-                  </a>
-                  <i class="fa fa-caret-down" aria-hidden="true" style="position:relative; top:8px;"></i>
-               </p>
-               <div class="cerrar_login" id="perfil" style="margin-top:10px;">
-                  <p>
-                     <img src="<?php echo $foto; ?>" class="img-perfil" alt="User Image">
-                  </p>
-                  <p class="parrofo_peril">
-                     <?php echo $roles; ?>
-                  </p>
-                  <p class="parrafo-sucursal"> Sucursal
-                     <?php echo $sucursal; ?>
-                  </p>
-                  <div class="contener-perfil">
-                     <a href="php/cerrarsesion.php" class="btn btn-light" style=""> Salir</a>
-                     <p id="cerrar" class="btn btn-light"> 
-                        <a href="" style="text-decoration:none; color:#2e2e2e;">Cerrar</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   </div>
-
-   <div>
-   <div class="container">
-   <div class="row">
-   <div class="col-md-12">
-   <p><?php echo $row['nombre']; ?></p>
-   
-   </div>
-   </div>
-   </div>
-   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php }}} ?>
+  <?php } ?>
 
 
 

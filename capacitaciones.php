@@ -24,7 +24,7 @@
    $rolcapacacitacion=$_REQUEST['rol'];
    ?>
 <body class="do-nicescrol">
-   <div style="background:#6d7fcc; width:100%; height:auto;">
+   <div style="background:#6d4c41; width:100%; height:auto;">
       <div class="container-fluid">
          <div class="row">
             <div class="col-md-1">
@@ -100,7 +100,7 @@
              
              <p style="font-size:65px;font-weight:600;color:#fff;text-align:center;margin-top:200px;">Capacitaciones</p>
              
-            <p style="background:#6d7fcc; width:50%;height:50px; margin:0 auto;  text-align:center;font-size:23px; font-weight:600;margin-top:100px;"><span style="color:#fff;position:relative;top:7px;">Meseros</span></p>
+            <p style="background:#ef5350; width:50%;height:50px; margin:0 auto;  text-align:center;font-size:23px; font-weight:600;margin-top:100px;"><span style="color:#fff;position:relative;top:7px;">Meseros</span></p>
              
             </div>
             <div class="col-md-3">
@@ -150,7 +150,7 @@
         <p style="text-align:center; font-size:30px; color:#2e2e2e;"><?php echo $row['nombrecapacitacion']?></p>
         </div>
         <div class="col-md-12">
-           <div style="margin-top:25px;background:#6d7fcc; width:25%; height:50px;border-radius:50px;">
+           <div style="margin-top:25px;background:#ef5350; width:25%; height:50px;border-radius:50px;">
                   
          <p style="color:#fff;position:relative;top:5px;left:25px;font-size:25px;font-weight:600;">Paso 1</p>
          
@@ -162,7 +162,7 @@
        
          </p>
          
-         <div style="margin-top:25px;background:#6d7fcc; float:right;width:25%; height:50px;border-radius:50px;">
+         <div style="margin-top:25px;background:#ef5350; float:right;width:25%; height:50px;border-radius:50px;">
          <p style="color:#fff;position:relative;top:5px;left:25px;font-size:25px;font-weight:600;">Paso 2</p>
          </div>
 

@@ -10,6 +10,7 @@
    $sucursal = $sesion-> get_sucursal("sucursal");
    $turno = $sesion-> get_turno("turno");
    $foto = $sesion-> get_foto("foto");
+ 
    if( $email == false )
    {	
    	header("Location: index.php");		
@@ -22,6 +23,7 @@
 <?php 
    }include 'php/header-interiores.php';
    $empleados=$_REQUEST['operaciones'];
+  
    ?>
 <body class="do-nicescrol">
    <div style="background:#6d7fcc; width:100%; height:auto;">
@@ -89,179 +91,203 @@
    </div>
 
   <?php if($empleados=='alta_empleado'){ ?>
-<div>
+<!--<div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-            <form action="">
-      <div style="margin-top:100px;">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <!--<label for="nombre">Nombre Completo</label>-->
-                  <input type="text" class="form-control " id="nombre" placeholder="Pedro Pérez Hernandez" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div class="col-md-6">
-                  <input type="tel" class="form-control " id="telefono" placeholder="Ejemplo 55-4050-6500" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div style="margin-top:100px;"></div>
-               <div class="col-md-4">
-                  <select class="custom-select " >
-                     <option selected>Selecciona Turno</option>
-                     <option value="1">Primer Turno</option>
-                     <option value="2">Segundo Turno</option>
-                     <option value="3">Tercer Turno</option>
-                  </select>
-               </div>
-               <p style="margin-top:50px;"></p>
-               <div class="col-md-4">
-                  <select class="custom-select " >
-                     <option selected>Selecciona Area</option>
-                     <option value="1">Comedor</option>
-                     <option value="2">Barra</option>
-                     <option value="3">Caja</option>
-                     <option value="4">Parrilla</option>
-                     <option value="5">Cocina</option>
-                  </select>
-               </div>
-               <p style="margin-top:50px;"></p>
-               <div class="col-md-4">
-                  <select class="custom-select ">
-                     <option selected>Selecciona Sucursal</option>
-                     <option value="1">Azteca</option>
-                     <option value="2">Ecatepec</option>
-                     <option value="3">Gustavo A.Madero</option>
-                  </select>
-               </div>
-               <p style="margin-top:55px;"></p>
-               <div class="col-md-3">
-                  <input type="text" class="form-control " id="rfc" placeholder="RFC" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div style="margin-top:100px;"></div>
-               <div class="col-md-3">
-                  <select class="custom-select ">
-                     <option selected>Selecciona Pais</option>
-                     <option value="1">Mexico</option>
-                  </select>
-               </div>
-               <p style="margin-top:50px;"></p>
-               <div class="col-md-3">
-                  <select class="custom-select ">
-                     <option selected>Selecciona Estado</option>
-                     <option value="1">Ciudad de Mexico</option>
-                     <option value="1">Estado de Mexico</option>
-                  </select>
-               </div>
-               <p style="margin-top:50px;"></p>
-               <div class="col-md-3">
-                  <select class="custom-select ">
-                     <option selected>Selecciona el Municipio</option>
-                     <option value="1">Ecatepec</option>
-                     <option value="1">Chalco</option>
-                  </select>
-               </div>
-               <p style="margin-top:50px;"></p>
-               <div class="col-md-6">
-                  <input type="text" class="form-control " id="calle" placeholder="Calle " value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div style="margin-top: 100px;"></div>
-               <div class="col-md-3">
-                  <input type="text" class="form-control " id="interior" placeholder="N° Interior" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <p style="margin-top:35px;"></p>
-               <div class="col-md-3">
-                  <input type="text" class="form-control " id="exterior" placeholder="N° Exterior" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div class="col-md-6">
-                  <input type="text" class="form-control " id="colonia" placeholder="colonia " value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div class="col-md-3">
-                  <select class="custom-select ">
-                     <option selected>Selecciona un Rol</option>
-                     <option value="1">Mesero</option>
-                     <option value="1">Cocinero</option>
-                     <option value="1">Chef</option>
-                  </select>
-               </div>
-               <p style="margin-top:50px;"></p>
-               <div class="col-md-3">
-                  <p style="text-align:center;"><img src="dd"></p>
-               </div>
-               <div class="col-md-5">
-                  <input type="email" class="form-control " id="email" placeholder="Ejemplo... lopezdiaz12@gmail.com" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div class="col-md-4">
-                  <input type="password" class="form-control " id="contrasena" placeholder="Password" value="" required>
-                  <p style="font-size:14px;margin-left:15px;margin-top:5px;color:rgb(218, 30, 30);">
-                     Campo Obligatorio
-                  </p>
-               </div>
-               <div class="col-md-3" style="position:relative;top:-20px;">
-                  <p>
-                     <span> Selecciona una Foto</span> 
-                     <input type="file" id="foto" class="" placeholder="Foto">	 
-                  </p>
-               </div>
-               <div class="col-md-6" style="position:relative;top:-20px;">
-                  <p style="margin-top:55px; text-align:center;"> 
-                     <input type="submit" id=""  style="width: 50%;"class="btn btn-primary" placeholder="">	 
-                  </p>
-                  
-               </div>
-               <div class="col-md-6" style="position:relative;top:-20px;">
-                  <p style="margin-top:55px; text-align:center;"> 
-                     <input type="submit" id=""  style="width: 50%;"class="btn btn-danger" value="Cancelar" placeholder="">	 
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </form>
-            </div>
+      
+   
+<div class="col-md-4">
+<select class="custom-select" name="nacionalida" id="pais">Selecciona Pais</select>
+</div>
+<div class="col-md-4">
+<select class="custom-select" id="jmr_contacto_estado" name="edo">
+
+    <option>Selecciona tu estado</option>
+
+    </select>
+</div>
+<div class="col-md-4">
+<select class="custom-select "  id="jmr_contacto_municipio" name="municipio"><option>Selecciona tu municipio</option></select>
+                           
+
+                           <input class="form-btn" name="submit" type="submit" value="Suscribirse">
+                           
+</div>
+  
+
+             
+        
         </div>
     </div>
-</div>
+</div>-->
 
   <?php } if($empleados=='editar_empleado'){ ?>
+   <div class="imagen_inicio">
+         <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+     <p style="margin-top:240px;"> </p>
+  </div>
+               <div class="col-md-3">
+               <div style="background:#8049da;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista.php?turnos=primero" > <img src="img/tur1.png"  style="width:45%; height:auto; margin-top:5px;" alt=""></a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:-15px;font-size:19px;">Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               <div class="col-md-3">
+               <div style="background:#8049da  ;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista.php?turnos=segundo" > <img src="img/turno_2.png"  style="width:45%; height:auto; margin-top:7px;" alt=""> </a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:-17px;font-size:19px;">Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               <div class="col-md-3">
+               <div style="background:#8049da ;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista.php?turnos=tercero" > <img src="img/turno_3.png"  style="width:45%; height:auto; margin-top:7px;" alt="">  </a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:-17px;font-size:19px;">Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               <div class="col-md-3">
+               <div style="background:#8049da ;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista.php?turnos=cambiar" > <i class="fas fa-cog" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Cambiar Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               
+            </div>
+         </div>
 
+        </div>
 
-<div> aparatdo de editar empleado</div>
-
-
-
+                        
   <?php } if($empleados=='baja_empleado'){ ?>
 
+   <div class="imagen_inicio">
+         <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+     <p style="margin-top:240px;"> </p>
+  </div>
+               <div class="col-md-3">
+               <div style="background:#d12a0d;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista_elimina.php?turnos=primero" > <img src="img/tur1.png"  style="width:45%; height:auto; margin-top:5px;" alt=""></a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:-15px;font-size:19px;">Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               <div class="col-md-3">
+               <div style="background:#d12a0d  ;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista_elimina.php?turnos=segundo" > <img src="img/turno_2.png"  style="width:45%; height:auto; margin-top:7px;" alt=""> </a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:-17px;font-size:19px;">Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               <div class="col-md-3">
+               <div style="background:#d12a0d ;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista_elimina.php?turnos=tercero" > <img src="img/turno_3.png"  style="width:45%; height:auto; margin-top:7px;" alt="">  </a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:-17px;font-size:19px;">Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               <div class="col-md-3">
+               <div style="background:#d12a0d;width:100%;height:140px;">
+                                     <p style="text-align:center;">
+                                     <a href="empledos_lista_elimina.php?turnos=cambiar" > <i class="fas fa-cog" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
+                                    <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Cambiar Turno</p>
+                                     </p>
+                                 </div>
+                                 <p style="margin-top:30px;"></p>
+               </div>
+               
+            </div>
+         </div>
+
+        </div>
 
 
-
-<div>aparatdo para eliminar empleado</div>
   <?php } if($empleados=='numero_empleado'){ ?>
 
-<div>apartado para numero de empleado</div>
+
+   <div class="imagen_inicio">
+    <div class="container">
+    
+       <div class="row">
+       <div class="col-md-12" style="margin-top:150px;">
+       <table class="table">
+  <thead class="" style="background:#15ad7b;">
+    <tr>
+      <th scope="col" style="color:#fff;">N° Empleado</th>
+      <th scope="col" style="color:#fff;">Nombre</th>
+      <th scope="col" style="color:#fff;">Roles</th>
+      <th scope="col" style="color:#fff;">Turno</th>
+      <th scope="col" style="color:#fff;">Area</th>
+      <th scope="col" style="color:#fff;">Sucursal</th>
+    </tr>
+  
+  </thead>
+  <?php
+                     require 'php/config.php';
+                     
+                          $sql = "SELECT id,numeroempleado,nombre,roles,area,turno,sucursal  FROM empleados ORDER BY numeroempleado DESC    limit 10 ";
+                          $result = $con->query($sql);
+                     
+                      
+                               if ($result->num_rows > 0) {
+           
+                                 while($row = $result->fetch_assoc()) {
+                                    $turno_uno_edit = $row['numeroempleado'];
+                     ?>
+  <tbody style="background:#fff;">
+  
+    <tr>
+    
+      <th scope="row"><?php echo $row['numeroempleado'] ?></th>
+      <td><?php echo $row['nombre'] ?></td>
+      <td><?php echo $row['roles'] ?></td>
+      <td><?php echo $row['turno'] ?></td>
+      <td><?php echo $row['area'] ?></td>
+      <td><?php echo $row['sucursal'] ?></td>
+    
+    </tr>
+  
+   
+    
+   <?php }} ?>
+  </tbody>
+</table>
+                      
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <?php } ?>
 
 
@@ -301,6 +327,49 @@
           });
       
       });
+   </script>
+   <script>
+
+
+                   
+<script>
+$(document).ready(function() {
+
+   $.ajax({
+type: "POST",
+url: "municipiso.php",
+data: { pais : "Pais" } 
+}).done(function(data){
+$("#pais").html(data);
+});
+
+
+
+
+
+   $.ajax({
+type: "POST",
+url: "municipiso.php",
+data: { estados : "Mexico" } 
+}).done(function(data){
+$("#jmr_contacto_estado").html(data);
+});
+// Obtener municipios
+$("#jmr_contacto_estado").change(function(){
+var estado = $("#jmr_contacto_estado option:selected").val();
+$.ajax({
+type: "POST",
+url: "municipiso.php",
+data: { municipios : estado } 
+}).done(function(data){
+$("#jmr_contacto_municipio").html(data);
+});
+});
+
+});
+</script>
+
+
    </script>
 </body>
 </html>

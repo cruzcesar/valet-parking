@@ -34,7 +34,7 @@
                         }
                       </style>
 <body class="do-nicescrol">
-   <div style="background:#6d7fcc; width:100%; height:auto;">
+   <div style="background:#6d4c41; width:100%; height:auto;">
       <div class="container-fluid">
          <div class="row">
             <div class="col-md-1">
@@ -111,7 +111,7 @@
   <div class="col-md-3">
                   <div style="background:#20beda;width:100%;height:140px;">
                                      <p style="text-align:center;">
-                                     <a href="empleados.php?operaciones=alta_empleado" > <i class="fa fa-user-check" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
+                                     <a href="registro_empleados.php" > <i class="fa fa-user-check" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Alta de Empleado</p>
                                      </p>
                                  </div>
@@ -273,7 +273,7 @@
      <p style="margin-top:240px;"> </p>
   </div>
                <div class="col-md-3">
-               <div style="background:#6d7fcc;width:100%;height:140px;">
+               <div style="background:#ef5350;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="turno.php?turnos=primero" > <img src="img/tur1.png"  style="width:45%; height:auto; margin-top:5px;" alt=""></a>
                                     <p style="color:#fff;text-align:center;position:relative;top:-15px;font-size:19px;">Turno</p>
@@ -282,7 +282,7 @@
                                  <p style="margin-top:30px;"></p>
                </div>
                <div class="col-md-3">
-               <div style="background:#6d7fcc  ;width:100%;height:140px;">
+               <div style="background:#ef5350  ;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="turno.php?turnos=segundo" > <img src="img/turno_2.png"  style="width:45%; height:auto; margin-top:7px;" alt=""> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:-17px;font-size:19px;">Turno</p>
@@ -291,7 +291,7 @@
                                  <p style="margin-top:30px;"></p>
                </div>
                <div class="col-md-3">
-               <div style="background:#6d7fcc ;width:100%;height:140px;">
+               <div style="background:#ef5350 ;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="turno.php?turnos=tercero" > <img src="img/turno_3.png"  style="width:45%; height:auto; margin-top:7px;" alt="">  </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:-17px;font-size:19px;">Turno</p>
@@ -300,7 +300,7 @@
                                  <p style="margin-top:30px;"></p>
                </div>
                <div class="col-md-3">
-               <div style="background:#6d7fcc  ;width:100%;height:140px;">
+               <div style="background:#ef5350  ;width:100%;height:140px;">
                                      <p style="text-align:center;">
                                      <a href="turno.php?turnos=cambiar" > <i class="fas fa-cog" id="hover-effect2" style="font-size:55px; color:#fff;position:relative;top:30px;"></i> </a>
                                     <p style="color:#fff;text-align:center;position:relative;top:30px;font-size:19px;">Cambiar Turno</p>
@@ -436,12 +436,252 @@
    <div class="row">
    
             <div class="col-md-12">
-     <p style="margin-top:240px;"> </p>
+     <p style="margin-top:40px;"> </p>
   </div>
       <div class="col-md-3">
-      orden de la mesa 
+       <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu1" style="text-decoration:none; font-weight:600;">
+       Menu 1
+       </a> 
+       
+       </p>
+       
+       </div>
+       <p style="margin-top:50px;"></p>
       </div>
+      <div class="col-md-3" >
+     
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       
+       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu2" style="text-decoration:none; font-weight:600;">
+       Menu 2
+       </a> 
+       
+       </p>
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+       
+      </div>
+      <div class="col-md-3">
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu3" style="text-decoration:none; font-weight:600;">
+       Menu 3
+       </a> 
+       
+       </p>
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+      <div class="col-md-3">
+
+     <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu4" style="text-decoration:none; font-weight:600;">
+       Menu 4
+       </a> 
+       
+       </p>
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+      <div class="col-md-3">
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu5" style="text-decoration:none; font-weight:600;">
+       Menu 5
+       </a> 
+       
+       </p>
+
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+      <div class="col-md-3">
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu6" style="text-decoration:none; font-weight:600;">
+       Menu 6
+       </a> 
+       
+       </p>
+
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+      <div class="col-md-3">
+      
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu7" style="text-decoration:none; font-weight:600;">
+       Menu 7
+       </a> 
+       
+       </p>
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+
+      <div class="col-md-3">
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu8" style="text-decoration:none; font-weight:600;">
+       Menu 8
+       </a> 
+       
+       </p>
+
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+
+
+      <div class="col-md-3">
+      
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+      
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu9" style="text-decoration:none; font-weight:600;">
+       Menu 9
+       </a> 
+       
+       </p>
+
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+
+      <div class="col-md-3">
+      
+      <div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu10" style="text-decoration:none; font-weight:600;">
+       Menu 10
+       </a> 
+       
+       </p>
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+      </div>
+
+<div class="col-md-3">
+
+<div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+       
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu11" style="text-decoration:none; font-weight:600;">
+       Menu 11
+       </a> 
+       
+       </p>
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+</div>
+
+
+<div class="col-md-3">
+
+<div  style="background:#fff;width:100; height:180px;">
+       <p style="text-align:center;position:relative;top:30px;">
+      <img src="img/platillos/1.jpg"  style="width:50%; height:auto;" alt="">
+       
+       </p>
+      
+       <p style="text-align:center;font-size:20px;margin-top:35px;">
+       <a href="platillos.php?ordenes=menu12" style="text-decoration:none; font-weight:600;">
+       Menu 12
+       </a> 
+       
+       </p>
+
+
+
+       </div>
+
+       <p style="margin-top:50px;"></p>
+</div>
+
+
+
    </div>
 </div>
 

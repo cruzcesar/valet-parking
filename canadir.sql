@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-09-2019 a las 09:47:39
+-- Tiempo de generación: 20-12-2019 a las 23:53:43
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.2.12
 
@@ -30,12 +30,41 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `ayuda` (
   `id` int(11) NOT NULL,
-  `roles` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `manuales` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `tablas` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `recomendaciones` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `extras` varchar(255) COLLATE utf8_spanish_ci NOT NULL
+  `nacionalida` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `municipio` varchar(255) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `ayuda`
+--
+
+INSERT INTO `ayuda` (`id`, `nacionalida`, `estado`, `municipio`) VALUES
+(1, '', '', ''),
+(2, '', '', ''),
+(3, '', '', ''),
+(4, '', '', ''),
+(5, '', 'Chihuahua', 'Balleza'),
+(6, '', 'Distrito Federal', 'Gustavo A. Madero'),
+(7, '', 'Estado de Mexico', 'Acambay de Ruiz CastaÃ±eda'),
+(8, '', 'Estado de Mexico', 'Acambay de Ruiz CastaÃ±eda'),
+(9, '', 'Estado de Mexico', 'Acambay de Ruiz CastaÃ±eda'),
+(10, '', 'Estado de Mexico', 'Acambay de Ruiz CastaÃ±eda'),
+(11, '', 'Estado de Mexico', 'Acambay de Ruiz CastaÃ±eda'),
+(12, '', 'Estado de Mexico', 'Acambay de Ruiz Castañeda'),
+(13, '', 'Estado de Mexico', 'Acambay de Ruiz Castañeda'),
+(14, '', 'Estado de Mexico', 'San MartÃ­n de las Piramides'),
+(15, '', 'Estado de Mexico', 'San Marti­n de las Piramides'),
+(16, '', 'Ciudad de Mexico', 'Ãlvaro Obregon'),
+(17, '', 'Ciudad de Mexico', 'Alvaro Obregon'),
+(18, '', 'Ciudad de Mexico', 'La Magdalena Contreras'),
+(19, 'Mexico', 'Estado de Mexico', 'Ecatepec de Morelos'),
+(20, 'Mexico', 'Estado de Mexico', 'Ecatepec de Morelos'),
+(21, 'Mexico', 'Ciudad de Mexico', 'Venustiano Carranza'),
+(22, '', '', ''),
+(23, '', '', ''),
+(24, 'Mexico', 'Baja California', 'Ensenada'),
+(25, 'Mexico', 'Puebla', 'AcaxtlahuacÃ¡n de Albino Zertuche');
 
 -- --------------------------------------------------------
 
@@ -102,7 +131,78 @@ CREATE TABLE `empleados` (
 INSERT INTO `empleados` (`id`, `numeroempleado`, `nombre`, `telefono`, `area`, `email`, `roles`, `sucursal`, `rfc`, `turno`, `foto`, `contrasena`, `confirmapassword`) VALUES
 (1, '1001', 'Cesar Bazan ', '55-5097-5240', 'administrador', 'bazan102004@hotmail.com', 'Administrador', 'satelite', 'duyssgsdsds', '1', 'img/cesar.jpg', '123456', '123456'),
 (2, '1002', 'Luis Perez', '55-4050-6065', 'mesero', 'bazancesar11@gmail.com', 'Mesero', 'Azteca', 'sasas', '2', 'img/cesar.jpg', '12345', '12345'),
-(3, '1003', 'Juan Garcia', '55-5045-5620', 'Cocina', 'bazancesar12@gmail.com', 'Cocinero', 'Ecatepec', 'sdsdgsgdg', '3', 'img/cesar.jpg', '12345', '12345');
+(3, '1003', 'Juan Garcia', '55-5045-5620', 'Cocina', 'bazancesar12@gmail.com', 'Cocinero', 'Ecatepec', 'sdsdgsgdg', '3', 'img/cesar.jpg', '12345', '12345'),
+(4, '1004', 'fsdfsdf', '6564654656', 'dfsfdsf', '', 'fsdfsdf', 'fsdfds', 'fsdfd', '1', 'fdsfsd', 'fsdf', 'fsdfd'),
+(5, '1005', 'Pancho garces', '6546546', 'Chef', 'hgf', 'Chef', 'hhgf', 'hgfhfg', '3', 'fsd', 'fsdf', 'fdsf'),
+(6, '1006', 'hgfhg', '5545', 'Mesero', 'gfdgdf', 'Mesero', 'fdsf', 'fsdfsd', '2', 'fsdfsd', 'fsdfds', 'fsdfd');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `estado`
+--
+
+CREATE TABLE `estado` (
+  `id` int(11) NOT NULL,
+  `entidad_federativa` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `prefijo` int(255) NOT NULL,
+  `clave` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `estado`
+--
+
+INSERT INTO `estado` (`id`, `entidad_federativa`, `prefijo`, `clave`) VALUES
+(1, 'Estado de México', 52, 1),
+(2, 'Ciudad de Mexico', 52, 2),
+(3, 'Veracruz', 52, 3),
+(4, 'Puebla', 52, 4);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `municipio`
+--
+
+CREATE TABLE `municipio` (
+  `id` int(11) NOT NULL,
+  `nombre_municipio` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `dos` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `id_estado` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `municipio`
+--
+
+INSERT INTO `municipio` (`id`, `nombre_municipio`, `dos`, `id_estado`) VALUES
+(1, 'Ecatepec', 'Estado de México', 1),
+(2, 'tecamc', 'Estado de México', 1),
+(3, 'Coacalco ', 'Estado de México', 1),
+(4, 'Tlalpan', 'dsdsd', 2),
+(5, 'Coyoacan', 'fdsfs', 2),
+(6, 'yes', 'jjj', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pais`
+--
+
+CREATE TABLE `pais` (
+  `id` int(11) NOT NULL,
+  `nombrepais` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `prefijo` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `pais`
+--
+
+INSERT INTO `pais` (`id`, `nombrepais`, `prefijo`) VALUES
+(1, 'México', 52),
+(2, 'Brazil', 52);
 
 -- --------------------------------------------------------
 
@@ -156,6 +256,24 @@ ALTER TABLE `empleados`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `estado`
+--
+ALTER TABLE `estado`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `municipio`
+--
+ALTER TABLE `municipio`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `pais`
+--
+ALTER TABLE `pais`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -169,7 +287,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `ayuda`
 --
 ALTER TABLE `ayuda`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `capacitacion`
@@ -181,7 +299,25 @@ ALTER TABLE `capacitacion`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de la tabla `estado`
+--
+ALTER TABLE `estado`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `municipio`
+--
+ALTER TABLE `municipio`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de la tabla `pais`
+--
+ALTER TABLE `pais`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
